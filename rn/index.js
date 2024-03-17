@@ -12,6 +12,7 @@ ReactNativeFeatureFlags.shouldEmitW3CPointerEvents = () => true;
 
 // enable hover events in Pressibility to be backed by the PointerEvent implementation.
 // shouldEmitW3CPointerEvents should also be true
-ReactNativeFeatureFlags.shouldPressibilityUseW3CPointerEventsForHover =
-  () => true;
+ReactNativeFeatureFlags.shouldPressibilityUseW3CPointerEventsForHover = () =>
+  true;
+
 AppRegistry.registerComponent(appName, () => App);
