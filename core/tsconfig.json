@@ -1,0 +1,10 @@
+{
+    "extends": "@tsconfig/node21/tsconfig.json",
+    "compilerOptions": {
+      "jsx": "react-jsx",
+      "declaration": true,
+      "outDir": "dist"
+    },
+    "include": ["src"],
+    "exclude": ["node_modules"]
+  }

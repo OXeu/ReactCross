@@ -1,0 +1,15 @@
+{
+	"private": true,
+	"workspaces": [
+		"core",
+		"rn",
+		"web"
+	],
+	"scripts": {
+		"web": "yarn workspace web dev",
+		"android": "yarn workspace rn android",
+		"ios": "yarn workspace rn ios",
+		"core:build": "yarn workspace @thankrain/cross-core build",
+		"core:dev": "yarn workspace @thankrain/cross-core dev"
+	}
+}

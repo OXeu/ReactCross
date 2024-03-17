@@ -1,0 +1,24 @@
+{
+  "name": "@thankrain/cross-core",
+  "version": "0.0.1",
+  "description": "A core sdk for BBHust cross platform app.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "Xeu",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@tsconfig/node21": "^21.0.1",
+    "@types/node": "^20.11.28",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "react": "18.2.0"
+  }
+}
