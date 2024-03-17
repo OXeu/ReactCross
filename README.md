@@ -1,5 +1,5 @@
 # React Multiplatform Framework
-Build native experince on each platform.
+Build native experince app on each platform.
 
 Support React Native, Web, Weapp,etc.
 
@@ -13,17 +13,18 @@ Describe components and layouts through an abstract factory class, other platfor
 - Universal UI framework.
 
 # Run
+
 Web
 ```
-yarn web
+yarn web:dev
 ```
 
 Android
 ```
-yarn android
+yarn android:dev
 ```
 
 iOS
 ```
-yarn ios
+yarn ios:dev
 ```

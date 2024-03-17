@@ -7,9 +7,15 @@
 	],
 	"scripts": {
 		"web": "yarn workspace web dev",
+		"core:build": "yarn workspace @thankrain/cross-core build",
 		"android": "yarn workspace rn android",
 		"ios": "yarn workspace rn ios",
-		"core:build": "yarn workspace @thankrain/cross-core build",
-		"core:dev": "yarn workspace @thankrain/cross-core dev"
+		"core:dev": "yarn workspace @thankrain/cross-core dev",
+		"web:dev": "concurrently --kill-others-on-fail \"yarn core:dev\"  \"yarn web\"",
+		"android:dev": "concurrently --kill-others-on-fail \"yarn core:dev\"  \"yarn android\"",
+		"ios:dev": "concurrently --kill-others-on-fail \"yarn core:dev\"  \"yarn ios\""
+	},
+	"dependencies": {
+		"concurrently": "^8.2.2"
 	}
 }
