@@ -1,10 +1,12 @@
 {
 	"private": true,
-	"workspaces": [
-		"core",
-		"rn",
-		"web"
-	],
+	"workspaces": {
+		"packages": [
+			"core",
+			"rn",
+			"web"
+		]
+	},
 	"scripts": {
 		"web": "yarn workspace web dev",
 		"core:build": "yarn workspace @thankrain/cross-core build",
@@ -17,5 +19,6 @@
 	},
 	"dependencies": {
 		"concurrently": "^8.2.2"
-	}
+	},
+	"packageManager": "yarn@4.1.1"
 }
