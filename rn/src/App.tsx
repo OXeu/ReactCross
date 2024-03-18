@@ -17,13 +17,14 @@ import {
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 import {setComponentFactory, Demo} from '@thankrain/cross-core';
-import { ContainerProvider, ImageProvider } from './Provider';
+import { ContainerProvider, ImageProvider, NavigationProvider } from './provider/Provider';
 
 
 setComponentFactory({
   TextView: props => <Text {...props} />,
   ImageView: props => <ImageProvider {...props} />,
   Container: props => <ContainerProvider {...props} />,
+  Navigation: (props) => <NavigationProvider {...props} />,
 });
 
 function App(): React.JSX.Element {

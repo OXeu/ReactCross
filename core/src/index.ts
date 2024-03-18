@@ -1,3 +1,2 @@
-export { setComponentFactory, getComponentFactory, TextView, ImageView, Container } from './wrappers/base';
-
+export * from './wrappers/factory';
 export { Demo } from './example';

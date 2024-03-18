@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container, ImageView, TextView, getComponentFactory } from ".";
+import { Container, ImageView, TextView } from ".";
 import { ButtonView } from "./component/button";
 import { ColumnLayout } from "./layout/container";
 export function Demo() {

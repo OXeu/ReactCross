@@ -19,3 +19,10 @@ export function ContainerProvider(props: ContainerProps) {
         <View {...props} />
     );
 }
+
+export function NavigationProvider(props: any) {
+    const { element, ...rest } = props;
+    return (
+        <View/>
+    );
+}

@@ -11,6 +11,7 @@ import {
 import { setComponentFactory } from "@thankrain/cross-core";
 import stylesheet from "~/tailwind.css";
 import { ImageProvider } from "./providers/image";
+import { NavigationProvider } from "./providers/navigation";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
@@ -22,6 +23,7 @@ export default function App() {
     TextView: (props) => <p {...props} />,
     ImageView: (props) => <ImageProvider {...props} />,
     Container: (props) => <div {...props} />,
+    Navigation: (props) => <NavigationProvider {...props} />,
   })
   return (
     <html lang="en">
