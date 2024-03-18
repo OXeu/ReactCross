@@ -1,6 +1,5 @@
-import { TextView } from "..";
+import { BaseProps, TextView } from "../index";
 import { ColumnLayout } from "../layout/container";
-import { BaseProps } from "../wrappers/base";
 
 export interface ButtonProps extends BaseProps {
     children?: string | number;

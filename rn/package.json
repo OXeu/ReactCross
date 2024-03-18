@@ -13,11 +13,12 @@
     "test": "jest"
   },
   "dependencies": {
-    "@thankrain/cross-core": "workspace:^",
+    "@thankrain/cross-core": "*",
     "nativewind": "^4.0.36",
     "react": "18.2.0",
     "react-native": "0.73.6",
-    "react-native-reanimated": "^3.8.1"
+    "react-native-reanimated": "^3.8.1",
+    "react-router-native": "^6.22.3"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

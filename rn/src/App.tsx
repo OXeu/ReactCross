@@ -11,20 +11,21 @@ import {
   StatusBar,
   Text,
   useColorScheme,
-  View,
 } from 'react-native';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
-import {setComponentFactory, Demo} from '@thankrain/cross-core';
+import {RouteView, setComponentFactory} from '@thankrain/cross-core';
 import { ContainerProvider, ImageProvider, NavigationProvider } from './provider/Provider';
+import { Navigate } from 'react-router-native';
 
 
 setComponentFactory({
   TextView: props => <Text {...props} />,
   ImageView: props => <ImageProvider {...props} />,
   Container: props => <ContainerProvider {...props} />,
-  Navigation: (props) => <NavigationProvider {...props} />,
+  createRouteView: (props) => NavigationProvider(props),
+  Navigate: (props) => <Navigate {...props} />
 });
 
 function App(): React.JSX.Element {
@@ -36,7 +37,7 @@ function App(): React.JSX.Element {
   return (
     <SafeAreaView style={backgroundStyle}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <Demo />
+      <RouteView />
     </SafeAreaView>
   );
 }

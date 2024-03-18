@@ -2,6 +2,11 @@ export interface RouteProps {
     element?: JSX.Element;
     path?: string;
     name?: string;
-    action?: () => void;
     options?: object;
+    children?: RouteProps[];
+}
+
+export interface NavigateProps {
+    to: string;
+    replace?: boolean;
 }

@@ -1,5 +1,3 @@
-import { RouteProps } from "./navigation";
-
 export type Elements = JSX.Element[] | JSX.Element;
 
 export interface BaseProps {
@@ -9,7 +7,7 @@ export interface BaseProps {
 }
 
 export interface TextProps extends BaseProps {
-    children?: string | number;
+    children?: string | number | JSX.Element | JSX.Element[] | null;
     style?: object;
 }
 

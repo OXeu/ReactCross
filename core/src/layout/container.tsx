@@ -1,5 +1,5 @@
-import { Container } from "..";
 import { BaseProps, Elements } from "../wrappers/base";
+import { Container } from "../wrappers/factory";
 
 export interface ColumnProps extends BaseProps {
     children?: Elements;

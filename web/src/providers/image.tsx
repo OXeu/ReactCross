@@ -1,4 +1,4 @@
-import { ImageProps } from "@thankrain/cross-core/dist/wrappers/base";
+import { ImageProps } from "@thankrain/cross-core";
 
 export function ImageProvider(props: ImageProps) {
     const { source, ...rest } = props;

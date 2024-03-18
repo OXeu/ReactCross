@@ -1,2 +1,4 @@
 export * from './wrappers/factory';
-export { Demo } from './example';
+export * from './example';
+export * from './wrappers/navigation';
+export * from './wrappers/base';

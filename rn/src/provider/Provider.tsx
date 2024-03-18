@@ -1,5 +1,7 @@
+import { RouteProps } from "@thankrain/cross-core";
 import { ContainerProps, ImageProps } from "@thankrain/cross-core/dist/wrappers/base";
 import { Image, Pressable, View } from "react-native";
+import { RouterProvider, createMemoryRouter } from "react-router-native";
 
 export function ImageProvider(props: ImageProps) {
     const { source, ...rest } = props;
@@ -20,9 +22,7 @@ export function ContainerProvider(props: ContainerProps) {
     );
 }
 
-export function NavigationProvider(props: any) {
-    const { element, ...rest } = props;
-    return (
-        <View/>
-    );
+export function NavigationProvider(props: RouteProps[]) {
+    const route = createMemoryRouter(props);
+    return (<RouterProvider router={route} />)
 }
