@@ -1,7 +1,7 @@
 {
   "name": "@thankrain/cross-core",
   "version": "0.0.1",
-  "description": "A core sdk for BBHust cross platform app.",
+  "description": "A core sdk for cross platform app.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "Xeu",

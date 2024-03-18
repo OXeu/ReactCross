@@ -1,6 +1,5 @@
-# BBHust Core SDK
+# ReactCross Core SDK
 
 ## What it contains?
-1. A core API wrapper.
-2. All required components interface declaration.
-3. Minimal required layout abstraction.
+1. All required components interface declaration.
+2. Basic components and layouts.
