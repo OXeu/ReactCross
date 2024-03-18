@@ -18,11 +18,9 @@ export const links: LinksFunction = () => [
 
 export default function App() {
   setComponentFactory({
-    QText: (props) => <p {...props} />,
-    QImage: (props) => <img {...props} />,
-    QBox: (props) => <div {...props} />,
-    QColumn: (props) => <div {...props} />,
-    QRow: (props) => <div className="flex flex-row" {...props} />,
+    TextView: (props) => <p {...props} />,
+    ImageView: (props) => <img {...props} />,
+    Container: (props) => <div {...props} />,
   })
   return (
     <html lang="en">

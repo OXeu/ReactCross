@@ -19,11 +19,9 @@ import {Colors} from 'react-native/Libraries/NewAppScreen';
 import {setComponentFactory, Demo} from '@thankrain/cross-core';
 
 setComponentFactory({
-  QText: props => <Text {...props} />,
-  QImage: props => <Text {...props} />,
-  QBox: props => <View {...props} />,
-  QColumn: props => <View {...props} />,
-  QRow: props => <View {...props} />,
+  TextView: props => <Text {...props} />,
+  ImageView: props => <Text {...props} />,
+  Container: props => <View {...props} />,
 });
 
 function App(): React.JSX.Element {
