@@ -1,7 +1,7 @@
-# React Multiplatform Framework
-Build native experince app on each platform.
-
-Support React Native, Web, Weapp,etc.
+# ReactCross
+A React Multiplatform Framework.  
+Build native experience app on each platform.   
+Support React Native, Web, Weapp, etc.
 
 # How it works
 
