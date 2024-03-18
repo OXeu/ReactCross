@@ -31,11 +31,7 @@ function Example() {
 }
 
 function About() {
-    const [counter, dispatcher] = useState(0);
     const [jumpBack, setJump] = useState(false);
-    function onClick() {
-        dispatcher(counter + 1);
-    }
     return (
         <>
             {jumpBack && <Navigate to="/" replace={jumpBack} />}

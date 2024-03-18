@@ -9,6 +9,7 @@
 	},
 	"scripts": {
 		"web": "yarn workspace web dev",
+		"web:build": "yarn workspace web build",
 		"core:build": "yarn workspace @thankrain/cross-core build",
 		"android": "yarn workspace rn android",
 		"reset": "yarn workspace rn start --reset-cache",
