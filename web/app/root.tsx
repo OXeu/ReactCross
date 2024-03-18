@@ -10,6 +10,7 @@ import {
 } from "@remix-run/react";
 import { setComponentFactory } from "@thankrain/cross-core";
 import stylesheet from "~/tailwind.css";
+import { ImageProvider } from "./providers/image";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
@@ -19,7 +20,7 @@ export const links: LinksFunction = () => [
 export default function App() {
   setComponentFactory({
     TextView: (props) => <p {...props} />,
-    ImageView: (props) => <img {...props} />,
+    ImageView: (props) => <ImageProvider {...props} />,
     Container: (props) => <div {...props} />,
   })
   return (

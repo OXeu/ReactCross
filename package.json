@@ -11,6 +11,7 @@
 		"web": "yarn workspace web dev",
 		"core:build": "yarn workspace @thankrain/cross-core build",
 		"android": "yarn workspace rn android",
+		"reset": "yarn workspace rn start --reset-cache",
 		"ios": "yarn workspace rn ios",
 		"core:dev": "yarn workspace @thankrain/cross-core dev",
 		"web:dev": "concurrently --kill-others-on-fail \"yarn core:dev\"  \"yarn web\"",
