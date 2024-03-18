@@ -2,6 +2,9 @@
   "name": "rn",
   "version": "0.0.1",
   "private": true,
+  "installConfig": {
+    "hoistingLimits": "workspaces"
+  },
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
@@ -10,7 +13,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@thankrain/cross-core": "link:..\\core",
+    "@thankrain/cross-core": "workspace:^",
     "nativewind": "^4.0.36",
     "react": "18.2.0",
     "react-native": "0.73.6",
