@@ -1,12 +1,20 @@
+import {ComponentType} from "react";
+
 export interface RouteProps {
-    element?: JSX.Element;
+    element: ComponentType<any>;
     path?: string;
     name?: string;
     options?: object;
-    children?: RouteProps[];
 }
 
 export interface NavigateProps {
     to: string;
     replace?: boolean;
+}
+
+export interface Navigator {
+    navigate: (dest: string) => void;
+    pop: () => void;
+    popToTop: () => void;
+    replace: (dest: string) => void;
 }
