@@ -1,5 +1,5 @@
-import {ContainerProps, ImageProps, TextProps} from "./base";
-import {NavigateProps, RouteProps} from "./navigation";
+import { ContainerProps, ImageProps, TextProps } from "./base";
+import { RouteProps } from "./navigation";
 
 export interface ComponentFactory {
     TextView: (props: TextProps) => JSX.Element;
