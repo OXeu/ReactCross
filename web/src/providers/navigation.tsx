@@ -1,7 +1,7 @@
 import { Navigator, RouteProps } from "@thankrain/cross-core";
 import { ComponentType } from "react";
 import { NavigateFunction, RouterProvider, createBrowserRouter, useNavigate } from "react-router-dom";
-export function RouteProvider(initialRouteName: string, routes: RouteProps[]) {
+export function RouteProvider(_: string, routes: RouteProps[]) {
     const router = routes.map((route) => {
         return {
             path: route.path ?? "/",
